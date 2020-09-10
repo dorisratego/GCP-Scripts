@@ -1,0 +1,13 @@
+MY_ZONE=[us-central1-c]
+
+MY_VMNAME=second-vm
+
+gcloud compute instances create $MY_VMNAME \
+
+--machine-type "n1-standard-1" \
+
+--image-project "debian-cloud" \
+
+--image-family "debian-9" \
+
+--subnet "default"
