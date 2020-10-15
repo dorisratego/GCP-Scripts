@@ -1,0 +1,1 @@
+gcloud compute --project=qwiklabs-gcp-00-1dda59d5ffee firewall-rules create fw-allow-health-checks --direction=INGRESS --priority=1000 --network=my-internal-app --action=ALLOW --rules=tcp:80 --source-ranges=130.211.0.0/22,35.191.0.0/16 --target-tags=backend-service
