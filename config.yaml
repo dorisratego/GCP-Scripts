@@ -1,7 +1,7 @@
 imports:
 - path: instance-template.jinja
 resources:
-# Create the auto-mode network
+# Create the auto mode network
 - name: mynetwork
   type: compute.v1.network
   properties:
