@@ -1,0 +1,1 @@
+gcloud compute --project=qwiklabs-gcp-01-577703377197 firewall-rules create managementnet-allow-icmp-ssh-rdp --direction=INGRESS --priority=1000 --network=managementsubnet --action=ALLOW --rules=tcp:22,tcp:3389,icmp --source-ranges=0.0.0.0/0
